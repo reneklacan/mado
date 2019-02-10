@@ -16,6 +16,7 @@
 		A75A2EEF2210711A00633A4E /* HotKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75A2EEE2210711A00633A4E /* HotKey.framework */; };
 		A75A2EF02210711A00633A4E /* HotKey.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A75A2EEE2210711A00633A4E /* HotKey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A75A2EF92210732000633A4E /* HotKey.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = A75A2EF82210732000633A4E /* HotKey.framework.dSYM */; };
+		A75A2EFB2210961600633A4E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A75A2EFA2210961600633A4E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		A75A2EE2220FBBED00633A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A75A2EEE2210711A00633A4E /* HotKey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HotKey.framework; path = Carthage/Build/Mac/HotKey.framework; sourceTree = "<group>"; };
 		A75A2EF82210732000633A4E /* HotKey.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = HotKey.framework.dSYM; path = Carthage/Build/Mac/HotKey.framework.dSYM; sourceTree = "<group>"; };
+		A75A2EFA2210961600633A4E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		A75A2EB6220FBBEB00633A4E = {
 			isa = PBXGroup;
 			children = (
+				A75A2EFA2210961600633A4E /* README.md */,
 				A75A2EF82210732000633A4E /* HotKey.framework.dSYM */,
 				A75A2EEE2210711A00633A4E /* HotKey.framework */,
 				A75A2EC1220FBBEB00633A4E /* Mado */,
@@ -262,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75A2EFB2210961600633A4E /* README.md in Resources */,
 				A75A2EC7220FBBED00633A4E /* Assets.xcassets in Resources */,
 				A75A2ECA220FBBED00633A4E /* Main.storyboard in Resources */,
 			);
