@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A75A2EC3220FBBEB00633A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A2EC2220FBBEB00633A4E /* AppDelegate.swift */; };
-		A75A2EC5220FBBEB00633A4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A2EC4220FBBEB00633A4E /* ViewController.swift */; };
 		A75A2EC7220FBBED00633A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75A2EC6220FBBED00633A4E /* Assets.xcassets */; };
 		A75A2ECA220FBBED00633A4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75A2EC8220FBBED00633A4E /* Main.storyboard */; };
 		A75A2ED6220FBBED00633A4E /* MadoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A2ED5220FBBED00633A4E /* MadoTests.swift */; };
@@ -63,7 +62,6 @@
 /* Begin PBXFileReference section */
 		A75A2EBF220FBBEB00633A4E /* Mado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mado.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75A2EC2220FBBEB00633A4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A75A2EC4220FBBEB00633A4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A75A2EC6220FBBED00633A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A75A2EC9220FBBED00633A4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A75A2ECB220FBBED00633A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				A75A2EC2220FBBEB00633A4E /* AppDelegate.swift */,
-				A75A2EC4220FBBEB00633A4E /* ViewController.swift */,
 				A75A2EC6220FBBED00633A4E /* Assets.xcassets */,
 				A75A2EC8220FBBED00633A4E /* Main.storyboard */,
 				A75A2ECB220FBBED00633A4E /* Info.plist */,
@@ -292,7 +289,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A75A2EC5220FBBEB00633A4E /* ViewController.swift in Sources */,
 				A75A2EC3220FBBEB00633A4E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
