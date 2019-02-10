@@ -27,7 +27,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        statusItem.title = "Mado"
+        let icon = NSImage(named: "TrayIcon")
+        icon?.isTemplate = true
+
+        statusItem.button!.image = icon
         statusItem.menu = statusMenu
 
         registerHotkeys(self)
