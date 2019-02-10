@@ -15,16 +15,16 @@ import AppKit
 class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var statusMenu: NSMenu!
 
-    @IBAction func quitClicked(_ sender: Any) {
-        NSApplication.shared.terminate(self)
-    }
-
     private var mainKeys = [Key.one, Key.two, Key.three, Key.four, Key.five]
     private var captureHotkeys: [HotKey]?
     private var invokeHotkeys: [HotKey]?
     private var capturedWindows: [Key: Int32] = [:]
 
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
+
+    @IBAction func quitClicked(_ sender: Any) {
+        NSApplication.shared.terminate(self)
+    }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         statusItem.title = "Mado"
@@ -33,7 +33,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         registerHotkeys(self)
     }
 
-    @IBAction func registerHotkeys(_ sender: Any?) {
+    func registerHotkeys(_ sender: Any?) {
         captureHotkeys = mainKeys.map({ key in
             let hotkey = HotKey(key: key, modifiers: [.command, .option])
             hotkey.keyDownHandler = { [weak self] in
@@ -49,12 +49,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         invokeHotkeys = mainKeys.map({ key in
             let hotkey = HotKey(key: key, modifiers: [.option])
             hotkey.keyDownHandler = { [weak self] in
-                print("invoke \(key) at \(Date())")
-
                 if let capturedWindowPid = self!.capturedWindows[key] {
                     self!.switchToApp(withPid: capturedWindowPid)
-
-                    print("switch to pid \(capturedWindowPid) at \(Date())")
+                } else {
+                    NSSound.beep()
                 }
             }
             return hotkey
@@ -64,9 +62,5 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func switchToApp(withPid pid: Int32) {
         let app = NSRunningApplication(processIdentifier: pid)
         app?.activate(options: .activateIgnoringOtherApps)
-    }
-
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
     }
 }
