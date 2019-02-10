@@ -1,0 +1,6 @@
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+/Carthage
